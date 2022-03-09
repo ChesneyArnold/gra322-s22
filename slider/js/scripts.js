@@ -1,6 +1,7 @@
-$(document) .ready(function (){
-    $('nav') .hide();
-    $('.menu-button') .click(function () {
-        $('nav') .slideToggle();
-    });
+var slider = tns({
+    container: '.my-slider',
+    items: 3,
+    nav:false,
+    slideBy: 'page',
+    autoplay: true
 });

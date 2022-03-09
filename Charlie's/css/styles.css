@@ -2,6 +2,7 @@ html {
     --cream: #FFF8F4; 
     --green: #C9D386;
     --black: #2C150A; 
+    --orange:#F37012;
 }
 
 body {
@@ -10,18 +11,18 @@ body {
 }
 
 header {
-    background-color: #fff;
-    text-align: center;
-    position: relative;
-  }
+  text-align: center;
+  position: relative;
+  background-color:#fff; 
+}
 
 header img {
     border: 2rem solid #fff;
     position: relative;
     z-index: 1;
-    height: 30vh;
-    width: 30vh;
-  }
+    max-width: 294px;
+    margin: 0 auto;
+}
 
 header::before {
     content: " ";
@@ -32,23 +33,23 @@ header::before {
     position: absolute;
     top: 38%;
     left: 0;
-    z-index: 0;
-  }
+    z-index: 0; 
+}
 
 
 .coffee {
     height: 70vh;
-  }
+}
   
 .coffee img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-  }
+}
   
 h1 {
     color: var(--black);
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 2rem;
@@ -57,51 +58,52 @@ h1 {
 
 h2 {
     color: var(--black);
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
+    margin-top: 2rem; 
+    margin-left: 2rem;
+}
+
+h3 {
+    color: var(--black);
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 4rem;
+    margin-left: 2rem;
 }
 
 h4 {
     color: var(--black);
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 400;
     letter-spacing: 1px;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-    padding-top: 7rem;
-}
-
-h5 {
-    color: var(--black);
-    font-size: 50px;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    padding-left: 2rem;
-    padding-top: 7rem;
+    margin-left: 2rem;
+    padding-top: 4rem;
 }
 
   
 table {
-    width: 100%;
-  }
-  
+    width: 90%;
+}
   
 th {
-    padding: 2rem;
+    padding: 3rem;
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
-  }
+}
+
+th:first-child {
+    width: 60%;
+}
   
-td {
-    padding: 2rem;
-    font-size: 40px;
+td { 
+    padding: 2rem; 
+    font-size: 30px;
     font-weight: 400;
-  }
+}
 
 .map img {
     position: relative;
@@ -109,44 +111,186 @@ td {
     height: 30%;
     width:60%;
     padding-left:2rem;
-    padding-top: 0.5rem ;
-  }
+    padding-top: 0.5rem;
+}
 
 .my-button {
-    background: #C9D386;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 30px;
-    border: 0px;
-  }
-
-  .my-button1 {
-    background: #C9D386;
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 0.5rem;
-    padding: 1rem;
-    margin-left: 2rem;
-    margin-top: 6rem;
-    border-radius: 30px;
-    border: 0px;
-  }
-
-  .my-button2 {
     background: #C9D386;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: 1px;
     margin-bottom: 2rem;
     padding: 1rem;
-    margin-left: 2rem;
-    margin-top: 6rem;
+    margin-left: 1.2rem;
+    margin-top: 2rem;
     border-radius: 30px;
     border: 0px;
-  }
+}
+
+.my-button1 {
+    background: #C9D386;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    margin-left: 1.2rem;
+    margin-top: 4rem;
+    border-radius: 30px;
+    border: 0px;
+}
+
+.my-button2 {
+    background: #C9D386;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 1rem;
+    border-radius: 30px;
+    border: 0px;
+    margin-top: 3rem;
+}
+
+.map {
+    max-width: 100%;
+    margin-left: 2rem;
+    max-height: 430px; 
+}
+
+.two-column {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+p {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    margin-top: 4rem;
+}
+
+footer {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  margin-left: 2rem;
+}
+
+.fa-brands {
+    color: var(--orange) 
+}
+
+
+@media screen and (max-width: 800px) {
+
+    header img {
+        max-width: 250px;
+    }
+
+    .coffee {
+        height: 50vh;
+    }
+
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+
+    .map {
+
+        max-width: 100%;
+        max-height: 380px; 
+        text-align: center;
+        position: relative;
+    }
+
+    p {
+        padding-bottom: 1rem;
+        margin-top: 1rem; 
+        margin-left: 2rem;
+    }
+
+    .my-button2 {
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+    }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .two-column {
+      grid-template-columns: 1fr;
+    }
+    
+    .map {
+
+        max-width: 86%;
+        max-height: 380px; 
+        text-align: center;
+        position: relative;
+    }
+
+    p {
+        padding-bottom: 1rem;
+        margin-top: 1rem; 
+        margin-left: 2rem;
+        font-size: 25px;
+    }
+
+    .my-button2 {
+        margin-top: 2rem;
+        margin-left: 1.5rem;
+        font-size: 30px;
+    }
+
+    header img {
+        max-width: 200px;
+    }
+
+    header::before {
+        margin-top: 2rem;
+    }
+
+    .coffee {
+        height: 40vh;
+    }
+
+    footer {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        margin-left: 0rem;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 30px; 
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+
+    th {
+        font-size: 25px;
+    }
+
+    td {
+        font-size: 25px;
+    }
+
+    .my-button {
+        font-size: 35px;
+    }
+
+    .my-button1 {
+        font-size: 35px;
+    }
+}
