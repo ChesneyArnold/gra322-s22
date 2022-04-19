@@ -16,12 +16,12 @@ header {
     font-weight:400; 
     padding-bottom: 1rem;
     padding-top: 0.5rem;
-    padding-left:0.5rem;
+    padding-left:1rem;
 }
 
 
 .my-intro {
-    background-image: url('https://picsum.photos/100/500');
+    background-image: ();
     background-position: center center;
     background-size: cover;
     text-align: center;
@@ -42,6 +42,7 @@ h1 {
     font-weight: 500;
     padding-top: 0.5rem;
     font-size: 25px;
+    padding-left:1rem;
 }
 
 .description {
@@ -56,6 +57,7 @@ h1 {
 
 .final {
     text-align: center;
+    padding-top: 3rem;
 }
 
 .my-slider {
@@ -75,6 +77,6 @@ h1 {
 }
 
 .container {
-  padding-left: 0.5rem;
-  padding-right:0.5rem;
+  padding-left: 1rem;
+  padding-right:1rem;
 }
