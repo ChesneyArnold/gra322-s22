@@ -3,5 +3,7 @@ var slider = tns({
     items: 1,
     nav:false,
     slideBy: 'page',
-    autoplay: true
+    autoplay: true,
+    autoplayButtonOutput: false,
+    controls: false
 });
