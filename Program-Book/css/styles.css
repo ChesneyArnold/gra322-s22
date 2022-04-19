@@ -1,0 +1,80 @@
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+.grid1 {
+    display: grid;
+    gap: 1rem;
+    max-width: 1400px;
+    padding-right: 5rem;
+    padding-left: 0.5rem;
+  }
+
+
+header {
+    background-color: #f8eeff;
+    font-weight:400; 
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-left:0.5rem;
+}
+
+
+.my-intro {
+    background-image: url('https://picsum.photos/100/500');
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    height: 30vw;
+    font-size: 40px;
+    padding-top: 3rem;
+}
+
+.title {
+    font-size: 20px;
+    padding-bottom: 1rem;
+}
+.name {
+    padding-bottom: 0.1rem;
+}
+
+h1 {
+    font-weight: 500;
+    padding-top: 0.5rem;
+    font-size: 25px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 2rem;
+}
+
+.final img {
+    text-align:center;
+}
+
+.final {
+    text-align: center;
+}
+
+.my-slider {
+    text-align: center;
+}
+
+.home img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    padding-top: 2rem;
+    padding-bottom:0.5rem;
+    font-size: 18px;
+}
+
+.container {
+  padding-left: 0.5rem;
+  padding-right:0.5rem;
+}

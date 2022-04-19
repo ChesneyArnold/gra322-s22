@@ -1,7 +1,7 @@
 html {
     --cream: #FFF8F4; 
     --green: #C9D386;
-    --black: #2C150A; 
+    --brown: #2C150A; 
     --orange:#F37012;
 }
 
@@ -26,7 +26,7 @@ header img {
 
 header::before {
     content: " ";
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--brown);
     margin-top: 3rem;
     width: 100%;
     height: 1px;
@@ -48,38 +48,39 @@ header::before {
 }
   
 h1 {
-    color: var(--black);
-    font-size: 30px;
+    color: var(--brown);
+    font-size: 25px;
     font-weight: 400;
     margin-bottom: 3rem;
     padding: 2rem;
 }
 
 h2 {
-    color: var(--black);
-    font-size: 45px;
-    font-weight: 400;
+    color: var(--brown);
+    font-size: 42px;
+    font-weight: 700;
     letter-spacing: 1px;
-    margin-top: 1rem; 
+    padding-top: 4rem; 
     margin-left: 2rem;
 }
 
 h3 {
-    color: var(--black);
-    font-size: 45px;
-    font-weight: 400;
+    color: var(--brown);
+    font-size: 42px;
+    font-weight: 700;
     letter-spacing: 1px;
-    padding-top: 4rem;
+    padding-top: 7rem;
     margin-left: 2rem;
 }
 
 h4 {
-    color: var(--black);
-    font-size: 45px;
-    font-weight: 400;
+    color: var(--brown);
+    font-size: 42px;
+    font-weight: 700;
     letter-spacing: 1px;
     margin-left: 2rem;
-    padding-top: 4rem;
+    padding-top: 7rem;
+    padding-bottom: 1rem;
 }
 
   
@@ -89,22 +90,24 @@ table {
   
 th {
     text-align: left;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 700;
     padding-left: 3.5rem;
     padding-bottom: 1rem;
+    color:#2C150A;
 }
 
 th:first-child {
-    width: 60%;
+    width: 70%;
 }
   
 td { 
     padding-left: 2rem; 
     padding-bottom: 0.75rem;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     position: relative;
+    color:#2C150A;
 }
 
 td span {
@@ -145,36 +148,25 @@ td span {
 
 .my-button {
     background: #C9D386;
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
-    padding: 1rem;
-    margin-left: 1.2rem;
-    border-radius: 40px;
-    border: 0px;
-}
-
-.my-button1 {
-    background: #C9D386;
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    margin-left: 1.2rem;
-    margin-top: 4rem;
-    border-radius: 40px;
-    border: 0px;
+    padding-left: 6rem;
+    padding-right: 4rem;
+    border-radius: 60px;
+    border:0px;
+    margin-left: -4rem;
+    color:#2C150A;
 }
 
 .my-button2 {
     background: #C9D386;
-    font-size: 35px;
+    font-size: 27px;
     font-weight: 700;
-    letter-spacing: 1px;
     padding: 1rem;
     border-radius: 40px;
     border: 0px;
     margin-top: 3rem;
+    color:#2C150A;
 }
 
 .map {
@@ -187,15 +179,17 @@ td span {
     display: grid;
     gap: 4rem;
     grid-template-columns: 1fr 1fr;
+    padding-top: 2rem;
 }
 
 
 p {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     padding-bottom: 0.5rem;
     padding-right:2rem;
     margin-top: 2rem;
+    color:#2C150A;
 }
 
 footer {
@@ -208,6 +202,50 @@ footer {
     color: var(--orange);
     padding-right: 0.5rem; 
 }
+
+.underline::after {
+    content: " ";
+    border-bottom: 1px solid var(--brown);
+    margin-top: 3rem;
+    width: 20%;
+    height: 1px;
+    position: absolute;
+    top: 155%;
+    left: 0;
+    z-index: 0; 
+}
+
+.underline1::after {
+    content: " ";
+    border-bottom: 3px solid var(--green);
+    margin-top: 3rem;
+    width: 56%;
+    height: 1px;
+    position: absolute;
+    top: 491%;
+    left: 0;
+    z-index: 0; 
+}
+
+
+.underline {
+    font-size: 42px;
+    font-weight: 700;
+    padding-left: 1rem;
+    margin-left: 1.2rem;
+    color:#2C150A;
+    padding-top: 3rem;
+}
+
+.underline1 {
+    font-size: 55px;
+    font-weight: 700;
+    padding: 1rem;
+    margin-left: 1.2rem;
+    padding-top: 4rem;
+    color:#2C150A;
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -234,41 +272,38 @@ footer {
 
     p {
         padding-bottom: 1rem;
-        margin-top: 0.5rem; 
         margin-left: 2rem;
-    }
-
-    .my-button {
-        font-size: 45px;
-    }
-
-    .my-button1 {
-        font-size: 45px;
+        font-size: 25px;
     }
 
     .my-button2 {
         margin-top: 2rem;
         margin-left: 1.5rem;
+        font-size: 23px;
+    }
+    
+    h1 {
+        font-size: 20px;
     }
 
     h2 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     h3 {
-        font-size: 40px; 
+        font-size: 34px; 
     }
     
     h4 {
-        font-size: 40px;
+        font-size: 34px;
     }
 
     th {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     td {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .menu-item::after {
@@ -277,6 +312,14 @@ footer {
 
     .menu-item-1::after {
         top: 1.5rem;
+    }
+
+    .underline {
+        font-size: 45px;
+    }
+
+    .underline1 {
+        font-size: 45px;
     }
 
     footer {
@@ -302,13 +345,14 @@ footer {
     p {
         padding-bottom: 1rem;
         margin-left: 2rem;
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: -1rem;
     }
 
     .my-button2 {
         margin-top: 2rem;
         margin-left: 1.2rem;
-        font-size: 30px;
+        font-size: 18px;
     }
 
     header img {
@@ -325,40 +369,32 @@ footer {
 
     footer {
         padding-bottom: 2rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
         margin-left: 0rem;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 18px;
     }
 
     h2 {
-        font-size: 35px;
+        font-size: 31px;
     }
 
     h3 {
-        font-size: 35px; 
+        font-size: 31px; 
     }
     
     h4 {
-        font-size: 35px;
+        font-size: 31px;
     }
 
     th {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     td {
-        font-size: 25px;
-    }
-
-    .my-button {
-        font-size: 38px;
-    }
-
-    .my-button1 {
-        font-size: 38px;
+        font-size: 20px;
     }
 
     .menu-item::after {
@@ -368,5 +404,13 @@ footer {
 
     .menu-item-1::after {
         top: 1.3rem;
+    }
+
+    .underline {
+        font-size: 39px;
+    }
+
+    .underline1 {
+        font-size: 39px;
     }
 }
