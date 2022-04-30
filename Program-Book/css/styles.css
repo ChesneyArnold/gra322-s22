@@ -9,7 +9,7 @@ body {
     max-width: 1400px;
     padding-right: 5rem;
     padding-left: 0.5rem;
-  }
+}
 
 
 header {
@@ -25,41 +25,56 @@ header {
     background-color: #f8eeff;
     background-position: center center;
     background-size: cover;
+    height: 20vw;
+    vertical-align: middle;
     text-align: center;
-    height: 30vw;
-    font-size: 40px;
-    padding-top: 3rem;
+    font-size: 26px;
+    padding-top: 2.5rem;
 }
 
+
 .title {
-    font-size: 20px;
-    padding-bottom: 1rem;
+    font-size: 19px;
+    padding-bottom: 0.3rem;
 }
+
 .name {
     padding-bottom: 0.1rem;
+    font-size: 16px;
 }
+
+a:visited { 
+    text-decoration: none; 
+    color: black; 
+}
+
+a:hover { 
+    text-decoration: none; 
+    color:rgb(86, 40, 145); 
+}
+
 
 h1 {
     font-weight: 500;
     padding-top: 0.5rem;
-    font-size: 25px;
+    font-size: 22px;
     padding-left:1rem;
 }
 
 .description {
     font-weight: 400;
     font-size: 16px;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .final img {
     text-align:center;
-    padding-bottom: 3rem;
 }
 
 .final {
     text-align: center;
-    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-top: 1.5rem;
 }
 
 .my-slider {
@@ -81,4 +96,53 @@ h1 {
 .container {
   padding-left: 1rem;
   padding-right:1rem;
+}
+
+.footer {
+    padding: 3rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    
+    .title {
+        font-size: 23px;
+        padding-bottom: 0.3rem;
+    }
+
+    .vcd {
+        font-size:21px;
+    }
+    
+    .name {
+        padding-bottom: 0.1rem;
+        font-size: 21px;
+    }
+
+    .my-intro {
+        font-size: 43px;
+        padding-top: 4.5rem;
+    }
+
+    .text {
+        font-size: 25px;
+    }
+    
+    h1 {
+        padding-top: 0.5rem;
+        font-size: 30px;
+        padding-left:1rem;
+    }
+
+    .description {
+        font-size: 23px;
+        padding-bottom: 1rem;
+    }
+
+    .footer {
+        padding: 1rem;
+    }
+
+
+
 }
