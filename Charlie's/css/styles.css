@@ -241,7 +241,7 @@ footer {
     }
 
     .coffee {
-        height: 50vh;
+        height: 40vh;
     }
 
     .two-column {
@@ -258,6 +258,7 @@ footer {
 
     p {
         padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
         margin-left: 2rem;
         font-size: 25px;
     }
@@ -275,7 +276,7 @@ footer {
 
     .my-button4 {
         font-size: 45px;
-        padding-right: 53px;
+        padding-right: 43px;
     }
     
     h1 {
@@ -322,6 +323,7 @@ footer {
 
 
 @media screen and (max-width: 400px) {
+   
     .two-column {
       grid-template-columns: 1fr;
     }
@@ -335,7 +337,8 @@ footer {
     }
 
     p {
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        margin-top: 0.5rem;
         margin-left: 2rem;
         font-size: 20px;
     }
@@ -347,12 +350,13 @@ footer {
     }
 
     .my-button {
-        font-size: 40px;
+        font-size: 33px;
         padding-right: 40px;
     }
 
     .my-button4 {
-        font-size: 30px;
+        font-size: 33px;
+        padding-right: 40px;
     }
 
 
@@ -379,15 +383,15 @@ footer {
     }
 
     h2 {
-        font-size: 31px;
+        font-size: 30px;
     }
 
     h3 {
-        font-size: 31px; 
+        font-size: 30px; 
     }
     
     h4 {
-        font-size: 31px;
+        font-size: 30px;
     }
 
     th {
